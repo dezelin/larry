@@ -1,11 +1,13 @@
 ---
-published: false
+published: true
 ---
+
 
 ---
 layout: post
 categories: larry introduction
 tags: larry introduction
+published: true
 ---
 
 ## Larry - a new C++11 STL
