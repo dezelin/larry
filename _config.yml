@@ -8,8 +8,8 @@ relative_permalinks: true
 title:               Larry
 tagline:             'A STL-like container & algorithms library for C++11'
 description:         ''
-url:                 http://dezelin.github.io/larry
-baseurl:             /larry
+url:                 http://dezelin.github.io/larry/
+baseurl:             http://dezelin.github.io/larry/
 paginate:            5
 
 # About/contact
