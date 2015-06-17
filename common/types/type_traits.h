@@ -24,18 +24,31 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef __MOVE_H__
-#define __MOVE_H__
-
-#include "common/types/type_traits.h"
+#ifndef __TYPE_TRAITS_H__
+#define __TYPE_TRAITS_H__
 
 namespace knt {
 
+//
+// Removes lvalue and rvalue reference from a type
+//
+
 template <typename T>
-typename remove_reference<T>::type&& move(T &&t) {
-    return static_cast<typename remove_reference<T>::type&&>(t);
-}
+struct remove_reference {
+    typedef T type;
+};
 
-} // knt
+template <typename T>
+struct remove_reference<T&> {
+    typedef T type;
+};
 
-#endif // __MOVE_H__
+template <typename T>
+struct remove_reference<T&&> {
+    typedef T type;
+};
+
+} // namespace knt
+
+#endif // __TYPE_TRAITS_H_
+
