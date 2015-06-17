@@ -9,7 +9,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -33,7 +33,7 @@
     </div>
     <div class="sidebar-nav-item">
         {% for category in site.categories %}
-        <li><a href="{{ site.baseurl }}/categories/{{ category[0] }}/">{{ category[0] }}</a></li>
+        <li><a href="{{ site.baseurl }}categories/{{ category[0] }}/">{{ category[0] }}</a></li>
         {% endfor %}
     </div>  
   </nav>
