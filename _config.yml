@@ -9,7 +9,7 @@ title:               Larry
 tagline:             'A STL-like container & algorithms library for C++11'
 description:         ''
 url:                 https://dezelin.github.io/larry/
-baseurl:             /larry/
+baseurl:             https://dezelin.github.io/larry
 paginate:            5
 
 # About/contact
