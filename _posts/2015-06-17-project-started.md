@@ -2,7 +2,7 @@
 published: true
 title: "Larry - a new C++11 STL"
 layout: post
-categories: larry introduction
+categories: introduction
 tags: larry introduction
 ---
 
